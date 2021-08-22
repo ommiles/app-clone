@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 export const Cards = () => {
-    return (
-        <div>
-            <h1>Cards</h1>
-        </div>
-    )
-}
+  return (
+    <div>
+      <h1>Cards</h1>
+    </div>
+  );
+};

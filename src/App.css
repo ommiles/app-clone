@@ -1,9 +1,30 @@
 /* APP */
 
-.App {
-  text-align: center;
-}
+
 
 /* HEADER */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+  border-bottom: 1px solid #f9f9f9;
+}
+
+.header__logo {
+  object-fit: contain;
+  height: 40px;
+}
+
+.header__icon {
+  
+}
+
 /* CARDS */
+
+
+
 /* BUTTONS */
+
+
