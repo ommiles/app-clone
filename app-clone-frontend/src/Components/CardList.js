@@ -1,21 +1,19 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import axios from '../axios';
 import { default as Card }from 'react-tinder-card';
 
 export const CardList = () => {
-  const [people, setPeople] = useState([
-    {
-      name: 'Dr. Shirley Jackson',
-      imgUrl: 'https://aaregistry.org/wp-content/uploads/2009/09/dr-shirley-ann-jackson-279x300.jpg',
-    },
-    {
-      name: 'Roy L. Clay',
-      imgUrl: 'https://www.blackentrepreneurprofile.com/fileadmin/user_upload/royclay.jpg',
-    },
-    {
-      name: 'Lonnie G. Johnson',
-      imgUrl: 'https://invention.si.edu/sites/default/files/inventors-johnson-lonnie-lonnie-with-super-soaker-2-small-teaser-edit.jpg',
-    },
-  ]);
+  const [people, setPeople] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      const req = await axios.get('/app-clone/cards')
+      setPeople(req.data)
+    }
+    fetchData()
+  }, []);
+
+  console.log(people)
 
   const swiped = (direction, name) => {
     console.log(`Removing: ${name}!`);
@@ -33,8 +31,8 @@ export const CardList = () => {
             className='swipe'
             key={idx}
             preventSwipe={['up', 'down']}
-            onSwipe={direction => swiped(direction, person.name)}
-            onCardLeftScreen={() => outOfFrame(person.name)}
+            onSwipe={direction => swiped(direction, person.url)}
+            onCardLeftScreen={() => outOfFrame(person.url)}
           >
             <div className='card' style={{ backgroundImage: `url(${person.imgUrl})` }}>
               <h3>{person.name}</h3>
