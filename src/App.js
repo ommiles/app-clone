@@ -1,12 +1,14 @@
+import { Header } from './Components/Header';
+import { Cards } from './Components/Cards';
+import { Buttons } from './Components/Buttons';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>MERN Project</h1>
-      {/* <Header /> */}
-      {/* <Cards /> */}
-      {/* <Buttons /> */}
+    <div className='App'>
+      <Header />
+      <Cards />
+      <Buttons />
     </div>
   );
 }
