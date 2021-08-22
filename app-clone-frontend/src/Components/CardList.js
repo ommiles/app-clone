@@ -5,15 +5,15 @@ export const CardList = () => {
   const [people, setPeople] = useState([
     {
       name: 'Dr. Shirley Jackson',
-      url: 'https://aaregistry.org/wp-content/uploads/2009/09/dr-shirley-ann-jackson-279x300.jpg',
+      imgUrl: 'https://aaregistry.org/wp-content/uploads/2009/09/dr-shirley-ann-jackson-279x300.jpg',
     },
     {
       name: 'Roy L. Clay',
-      url: 'https://www.blackentrepreneurprofile.com/fileadmin/user_upload/royclay.jpg',
+      imgUrl: 'https://www.blackentrepreneurprofile.com/fileadmin/user_upload/royclay.jpg',
     },
     {
       name: 'Lonnie G. Johnson',
-      url: 'https://invention.si.edu/sites/default/files/inventors-johnson-lonnie-lonnie-with-super-soaker-2-small-teaser-edit.jpg',
+      imgUrl: 'https://invention.si.edu/sites/default/files/inventors-johnson-lonnie-lonnie-with-super-soaker-2-small-teaser-edit.jpg',
     },
   ]);
 
