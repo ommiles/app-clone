@@ -16,7 +16,7 @@ export const CardList = () => {
   console.log(people)
 
   const swiped = (direction, name) => {
-    console.log(`Removing: ${name}!`);
+    console.log(`${name} has been swiped ${direction}!`);
   };
 
   const outOfFrame = name => {
@@ -31,8 +31,8 @@ export const CardList = () => {
             className='swipe'
             key={idx}
             preventSwipe={['up', 'down']}
-            onSwipe={direction => swiped(direction, person.url)}
-            onCardLeftScreen={() => outOfFrame(person.url)}
+            onSwipe={direction => swiped(direction, person.name)}
+            onCardLeftScreen={() => outOfFrame(person.name)}
           >
             <div className='card' style={{ backgroundImage: `url(${person.imgUrl})` }}>
               <h3>{person.name}</h3>
