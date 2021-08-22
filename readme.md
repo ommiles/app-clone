@@ -1,6 +1,6 @@
 # Basic MERN Stack App
 
-Hello, welcome to my first MERN project. This is a full-stack project with a live demo available [here](#https://app-clone-frontend.firebaseapp.com/).
+Hello, welcome to my first MERN project. This is a full-stack project with a live demo available [here](https://app-clone-frontend.firebaseapp.com/).
 
 <p align="center">
     <img src='./project-image-01.png' object-fit='contain' height='400px'/>
@@ -18,7 +18,7 @@ Hello, welcome to my first MERN project. This is a full-stack project with a liv
 
 ---
 
-I've built a React frontend, set up a Node.js server, used Express middleware, and added a MongoDB database seeded with photos from Unsplash. The React front end uses [Material UI](#https://material-ui.com/), [axios](#https://axios-http.com/) for API calls, and [react-tinder-card](#https://www.npmjs.com/package/react-tinder-card).
+I've built a React frontend, set up a Node.js server, used Express middleware, and added a MongoDB database seeded with photos from Unsplash. The React front end uses [Material UI](https://material-ui.com/), [axios](https://axios-http.com/) for API calls, and [react-tinder-card](https://www.npmjs.com/package/react-tinder-card).
 
 ## Technologies
 
