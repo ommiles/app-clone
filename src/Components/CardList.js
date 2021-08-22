@@ -26,7 +26,7 @@ export const CardList = () => {
   };
 
   return (
-    <div className='cards'>
+    <div>
       <div className='cards__cardContainer'>
         {people.map((person, idx) => (
           <Card

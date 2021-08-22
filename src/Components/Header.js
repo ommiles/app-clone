@@ -8,13 +8,13 @@ export const Header = () => {
   return (
     <div className='header' >
       <IconButton>
-        <PersonIcon fontSize='large' className='header__icon' />
+        <PersonIcon fontSize='large' />
       </IconButton>
 
       <img alt='App Logo' src={Logo} className='header__logo' />
 
       <IconButton>
-        <ForumIcon fontSize='large' className='header__icon' />
+        <ForumIcon fontSize='large' />
       </IconButton>
     </div>
   );
