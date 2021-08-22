@@ -1,5 +1,5 @@
 import { Header } from './Components/Header';
-import { Cards } from './Components/Cards';
+import { CardList } from './Components/CardList';
 import { Buttons } from './Components/Buttons';
 import './App.css';
 
@@ -7,7 +7,7 @@ function App() {
   return (
     <div className='App'>
       <Header />
-      <Cards />
+      <CardList />
       <Buttons />
     </div>
   );
