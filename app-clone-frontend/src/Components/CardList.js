@@ -36,7 +36,7 @@ export const CardList = () => {
             onSwipe={direction => swiped(direction, person.name)}
             onCardLeftScreen={() => outOfFrame(person.name)}
           >
-            <div className='card' style={{ backgroundImage: `url(${person.url})` }}>
+            <div className='card' style={{ backgroundImage: `url(${person.imgUrl})` }}>
               <h3>{person.name}</h3>
             </div>
           </Card>

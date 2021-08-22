@@ -44,14 +44,5 @@ app.get('/app-clone/cards', (req, resp) => {
   });
 });
 
-app.delete('/app-clone/cards/:id', async (req, res) => {
-  // const id = req.params.id;
-  const { id } = req.params;
-  console.log(`req.params.id: ${req.params.id}`);
-  const cardsIndex = Cards.findIndex(card => card.id == id);
-  Cards.splice(cardsIndex, 1);
-  return res.send();
-});
-
 // Listener
 app.listen(port, () => console.log(`listening on localhost:${port}`));
