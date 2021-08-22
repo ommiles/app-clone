@@ -1,5 +1,9 @@
 /* APP */
 
+body {
+  background-color: #f5f5f5;
+}
+
 /* HEADER */
 
 .header {
@@ -7,7 +11,7 @@
   align-items: center;
   justify-content: space-between;
   z-index: 2;
-  border-bottom: 1px solid #f9f9f9;
+  border-bottom: 1px solid #e9e7e7;
 }
 
 .header__logo {
@@ -39,7 +43,7 @@
 .cards__cardContainer {
   display: flex;
   justify-content: center;
-  margin-top: 5vh;
+  margin-top: 8vh;
 }
 
 .swipe {
@@ -66,3 +70,46 @@
 }
 
 /* BUTTONS */
+
+.buttons {
+  position: fixed;
+  bottom: 6vh;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.buttons .MuiIconButton-root {
+  background-color: #fff !important;
+  box-shadow: 0px 18px 53px 0px rgba(0, 0, 0, 0.3);
+}
+
+.buttons .MuiIconButton-root:hover {
+  background-color: #f1f0f0 !important;
+}
+
+.buttons__repeat {
+  padding: 1vw !important;
+  color: #f5b748 !important;
+  
+}
+
+.buttons__left {
+  padding: 1vw !important;
+  color: #ec5e6f !important;
+}
+
+.buttons__star {
+  padding: 1vw !important;
+  color: #62b4f9 !important;
+}
+
+.buttons__favorite {
+  padding: 1vw !important;
+  color: #76e2b3 !important;
+}
+
+.buttons__lightning {
+  padding: 1vw !important;
+  color: #915dd1 !important;
+}
